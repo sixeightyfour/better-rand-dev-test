@@ -99,7 +99,7 @@ const MAINLIST_SCP_EXCLUDED_TAGS = {
   en: ["joke", "explained", "archived", "decommissioned", "international"],
 };
 
-// Tags Excluded from General Random SCP unless Specified
+// Tags Excluded from General Random SCP Unless Specified
 function getMainlistScpExcludedTags(language) {
   return MAINLIST_SCP_EXCLUDED_TAGS[language] ?? [];
 }
