@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCP Page Randomizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <div id="credit" class="credit"></div>
+
+    <button id="menu-toggle-btn" class="menu-btn" type="button" aria-expanded="false">
+      ☰
+    </button>
+
+  <div id="menu-panel" class="menu-panel hidden">
+    <button id="menu-close-btn" class="menu-close-btn" type="button">✕</button>
+
+    <label for="custom-search-kind-select"></label>
+    <select id="custom-search-kind-select"></select>
+
+    <label for="custom-search-tags-input"></label>
+    <input
+      id="custom-search-tags-input"
+      type="text"
+    />
+
+    <label for="custom-search-author-input"></label>
+    <input
+      id="custom-search-author-input"
+      type="text"
+    />
+
+    <div class="custom-checkbox-row">
+      <button
+        id="custom-search-include-adult"
+        type="button"
+        class="custom-checkbox"
+        aria-pressed="false"
+      ></button>
+      <span id="custom-search-include-adult-label"></span>
+      <button
+        id="custom-search-include-translations"
+        type="button"
+        class="custom-checkbox"
+        aria-pressed="false"
+      ></button>
+      <span id="custom-search-include-translations-label"></span>
+    </div>
+
+    <button id="custom-search-submit-btn" type="button"></button>
+  </div>
+    
+    <h1 id="page-title"></h1>
+    <p id="page-subtitle" class="subtitle"></p>
+
+    <div class="button-row">
+      <button id="random-scp-btn"></button>
+      <button id="random-tale-btn"></button>
+      <button id="random-goi-btn"></button>
+      <button id="random-art-btn"></button>
+    </div>
+
+    <div class="toggle-row">
+      <button
+        id="adult-toggle-btn"
+        type="button"
+        class="toggle-btn"
+        aria-pressed="false"
+      ></button>
+      <button
+        id="translation-toggle-btn"
+        type="button"
+        class="toggle-btn"
+        aria-pressed="false"
+      ></button>
+      <span id="translation-toggle-label" class="hidden"></span>
+    </div>
+
+    <p id="status" class="status"></p>
+
+    <section id="result-card" class="card hidden">
+      <div class="result-header">
+        <div class="result-main">
+          <p class="type" id="result-type"></p>
+          <h2 id="result-title"></h2>
+          <p id="result-alt-title" class="alt-title hidden"></p>
+
+          <div class="meta">
+            <p id="result-scp-number" class="hidden"></p>
+            <p id="result-rating"></p>
+          </div>
+
+          <p id="result-preview" class="preview hidden"></p>
+        </div>
+
+        <img id="result-thumbnail" class="thumbnail hidden" alt="Article thumbnail" />
+      </div>
+
+      <div>
+        <h3 id="tags-label"></h3>
+        <div id="result-tags" class="tags"></div>
+      </div>
+
+      <div id="result-licensebox" class="licensebox hidden"></div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
