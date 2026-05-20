@@ -83,7 +83,7 @@ const TAG_MAP = {
   }
 };
 
-// Translated Pages Tags for -VN
+// Translated Page Tags for -VN
 const TRANSLATED_TAG_MAP = {
   vn: {
     scp: "scp",
