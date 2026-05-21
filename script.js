@@ -139,7 +139,7 @@ var TRANSLATIONS = {
     // Labels above Random Page's Title
     'scp-label': 'SCP Article',
     'tale-label': 'Tale',
-    'goi-label': 'GoI Article',
+    'goi-label': 'GoI Format',
     'art-label': 'Artwork',
     'random-tag-label': 'Page Tagged With',
     // Random Page Info
