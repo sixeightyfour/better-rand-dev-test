@@ -14,43 +14,34 @@
       ☰
     </button>
 
-  <div id="menu-panel" class="menu-panel hidden">
-    <button id="menu-close-btn" class="menu-close-btn" type="button">✕</button>
+    <div id="menuPanel" class="menu-panel hidden">
+      <button id="menuCloseBtn" class="menu-close-btn" type="button">✕</button>
 
-    <label for="custom-search-kind-select"></label>
-    <select id="custom-search-kind-select"></select>
+      <div class="menu-field">
+        <select id="custom-search-kind-select">
+          <option value="rating">Rating</option>
+          <option value="created">Created</option>
+          <option value="modified">Modified</option>
+        </select>
+        <label for="custom-search-kind-select">Search type</label>
+      </div>
 
-    <label for="custom-search-tags-input"></label>
-    <input
-      id="custom-search-tags-input"
-      type="text"
-    />
+      <div class="menu-field">
+        <input id="custom-search-tags-input" type="text">
+        <label for="custom-search-tags-input">Tags</label>
+      </div>
 
-    <label for="custom-search-author-input"></label>
-    <input
-      id="custom-search-author-input"
-      type="text"
-    />
+      <div class="menu-field">
+        <input id="custom-search-author-input" type="text">
+        <label for="custom-search-author-input">Author</label>
+      </div>
 
-    <div class="custom-checkbox-row">
-      <button
-        id="custom-search-include-adult"
-        type="button"
-        class="custom-checkbox"
-        aria-pressed="false"
-      ></button>
-      <span id="custom-search-include-adult-label"></span>
-      <button
-        id="custom-search-include-translations"
-        type="button"
-        class="custom-checkbox"
-        aria-pressed="false"
-      ></button>
-      <span id="custom-search-include-translations-label"></span>
+      <div class="menu-field">
+        <button id="custom-search-submit-btn" type="button">Search</button>
+        <span class="field-label">Run search</span>
+      </div>
+    
     </div>
-
-    <button id="custom-search-submit-btn" type="button"></button>
-  </div>
     
     <h1 id="page-title"></h1>
     <p id="page-subtitle" class="subtitle"></p>
