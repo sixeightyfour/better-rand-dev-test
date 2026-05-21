@@ -462,12 +462,21 @@ input {
   }
 
   .tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 0.4rem;
   }
 
   .tag {
-    font-size: 0.875rem;
-    padding: 0.5rem 0.7rem;
+    display: inline-flex;
+    width: fit-content;
+    max-width: 100%;
+    flex: 0 1 auto;
+    padding: 0.35rem 0.55rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
   }
 }
 
