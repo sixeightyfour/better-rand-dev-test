@@ -99,7 +99,7 @@ const MAINLIST_SCP_EXCLUDED_TAGS = {
   en: ["joke", "explained", "archived", "decommissioned", "international"],
 };
 
-// Tags Excluded from General Random SCP unless Specified
+// Tags Excluded from General Random SCP Unless Specified
 function getMainlistScpExcludedTags(language) {
   return MAINLIST_SCP_EXCLUDED_TAGS[language] ?? [];
 }
@@ -139,7 +139,7 @@ var TRANSLATIONS = {
     // Labels above Random Page's Title
     'scp-label': 'SCP Article',
     'tale-label': 'Tale',
-    'goi-label': 'GoI Article',
+    'goi-label': 'GoI Format',
     'art-label': 'Artwork',
     'random-tag-label': 'Page Tagged With',
     // Random Page Info
