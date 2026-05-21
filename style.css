@@ -86,18 +86,25 @@ button:hover {
 .menu-panel {
   position: fixed;
   top: 0;
+  left: 0;
   right: 0;
-  height: 17em;
-  width: 35%;
+
+  width: 100%;
+  min-height: auto;
+
   background: #f4f4f4;
-  border-left: 0.125rem solid #633;
   border-bottom: 0.125rem solid #633;
+
   padding: 0.625rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   gap: 0.625rem;
+
   z-index: 999;
-  overflow-y: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: border-box;
 }
 
 .menu-panel.hidden {
@@ -105,7 +112,8 @@ button:hover {
 }
 
 .menu-close-btn {
-  align-self: flex-end;
+  flex: 0 0 auto;
+  align-self: center;
   font-size: 1.25rem;
   padding: 0.25rem 0.5rem;
   background: #fff;
@@ -221,7 +229,8 @@ h2 a:hover {
 #custom-search-tags-input,
 #custom-search-author-input {
   box-sizing: border-box;
-  width: 100%;
+  width: auto;
+  min-width: 12rem;
   min-height: 2.75rem;
   padding: 0.625rem 0.75rem;
   font-size: 1rem;
