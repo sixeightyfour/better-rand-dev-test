@@ -96,7 +96,6 @@ button:hover {
 
   background: #f4f4f4;
   border: 0.125rem solid #633;
-  border-left: 0;
 
   padding: 1rem;
   display: flex;
@@ -279,7 +278,7 @@ h2 a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-image: none;
-  height: 2.75rem;
+  height: fit-content;
   line-height: normal;
 }
 
